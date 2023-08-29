@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-starter",
+  "version": "1.0.0",
+  "description": "My splendid Nuxt.js project",
+  "author": "Brittany Chiang",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^0.1.2",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.6.1"
+  },
+  "devDependencies": {
+    "@upstatement/eslint-config": "^0.4.2",
+    "@upstatement/prettier-config": "^0.3.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.11",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "sass-loader": "^7.1.0",
+    "vue-eslint-parser": "^6.0.3"
+  }
+}
